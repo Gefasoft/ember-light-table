@@ -32,7 +32,7 @@ export default Component.extend({
   willDestroyElement() {
     this._super(...arguments);
     document.removeEventListener('mousemove', this.__mouseMove);
-    document.removeEventListener('mouseip', this.__mouseUp);
+    document.removeEventListener('mouseup', this.__mouseUp);
   },
 
   click(e) {
